@@ -7,7 +7,7 @@
         <v-card class="login-container">
           <v-row justify="center" align="center">
       <br><br><br><br><br><br><br><br><br><br><br><br>
-      <v-img src="../assets/uaa.png" contain max-width="500"></v-img>
+      <v-img src="../assets/uaa.png" contain width="600"></v-img>
     </v-row>
    
           <v-card-title class="justify-center">
