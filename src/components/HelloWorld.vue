@@ -51,7 +51,7 @@
               <v-btn  color="white" variant="outlined" size="x-large" text block rounded @click="recoverPassword">
                 Recuperar Contraseña
               </v-btn>
-              <br><br><br><br><br><br><br><br><br><br><br><br>
+              <br><br><br><br><br><br><br><br>
               <label class="contact-info">Consultas | Telefono : 02257-429300/420338 |</label>
               <label class="contact-info">Correo : plataforma.solicitudes@atlantida.edu.ar</label>
               <label class="contact-info">Éste sitio ha sido desarrollado y comprobado para utilizarlo en el navegador</label>
