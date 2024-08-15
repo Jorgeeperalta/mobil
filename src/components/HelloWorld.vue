@@ -1,0 +1,115 @@
+<template>
+  <v-container fluid class="login-container">
+   
+    <v-row justify="center" align="center" >
+      <v-col cols="12" sm="8" md="4">
+       
+        <v-card class="login-container">
+          <v-row justify="center" align="center">
+      <br><br><br><br><br><br><br><br><br><br>
+      <v-img src="../assets/uaa.png" contain max-width="350"></v-img>
+    </v-row>
+   
+          <v-card-title class="justify-center">
+           
+          </v-card-title>
+          <v-card-text>
+            <v-form ref="form" v-model="valid">
+              <v-text-field
+                v-model="username"
+                label="Usuario"
+                prepend-inner-icon="mdi-account"
+                outlined
+                dense
+                rounded
+                :rules="usernameRules"
+                 variant="solo-filled"
+                required
+              ></v-text-field>
+              <v-text-field
+                v-model="password"
+                label="Contraseña"
+                prepend-inner-icon="mdi-lock"
+                type="password"
+                outlined
+                dense
+                rounded
+                :rules="passwordRules"
+                variant="solo-filled"
+                required
+              ></v-text-field>
+              <v-btn
+                color="primary"
+                block
+                rounded
+                class="my-4"
+                @click="submit"
+              >
+                Entrar
+              </v-btn>
+              <v-btn text block rounded @click="recoverPassword">
+                Recuperar Contraseña
+              </v-btn>
+            </v-form>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      username: '',
+      password: '',
+      valid: false,
+      usernameRules: [
+        v => !!v || 'El usuario es requerido',
+        v => v.length >= 3 || 'El usuario debe tener al menos 3 caracteres'
+      ],
+      passwordRules: [
+        v => !!v || 'La contraseña es requerida',
+        v => v.length >= 6 || 'La contraseña debe tener al menos 6 caracteres'
+      ]
+    }
+  },
+  methods: {
+    submit() {
+      if (this.$refs.form.validate()) {
+        // Lógica para iniciar sesión
+        console.log('Usuario:', this.username, 'Contraseña:', this.password);
+      }
+    },
+    recoverPassword() {
+      // Lógica para recuperar contraseña
+      console.log('Recuperar contraseña');
+    }
+  }
+}
+</script>
+
+<style scoped>
+.login-container {
+  background-color:#142c6c ;
+  height: 100vh;
+}
+.custom-input .v-input__control {
+  background-color: #e7eaeb !important; /* Color de fondo */
+  border-radius: 25px; /* Bordes redondeados */
+}
+
+.custom-input .v-label {
+  color: #00796b !important; /* Cambia el color de la etiqueta */
+}
+
+.custom-input input {
+  color: #bececb !important; /* Cambia el color del texto */
+}
+
+.custom-input .v-input__control::before,
+.custom-input .v-input__control::after {
+  border-color: #ee0909 !important; /* Color del borde */
+}
+</style>
