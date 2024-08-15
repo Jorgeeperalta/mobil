@@ -6,7 +6,7 @@
        
         <v-card class="login-container">
           <v-row justify="center" align="center">
-      <br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
       <v-img src="../assets/uaa.png" contain max-width="350"></v-img>
     </v-row>
    
@@ -51,6 +51,11 @@
               <v-btn  color="white" variant="outlined" size="x-large" text block rounded @click="recoverPassword">
                 Recuperar Contraseña
               </v-btn>
+              <br><br><br><br><br><br><br><br><br><br><br><br>
+              <label class="contact-info">Consultas | Telefono : 02257-429300/420338 |</label>
+              <label class="contact-info">Correo : plataforma.solicitudes@atlantida.edu.ar</label>
+              <label class="contact-info">Éste sitio ha sido desarrollado y comprobado para utilizarlo en el navegador</label>
+              <label class="contact-info">Google Chrome.</label>
             </v-form>
           </v-card-text>
         </v-card>
@@ -112,5 +117,11 @@ export default {
 .custom-input .v-input__control::before,
 .custom-input .v-input__control::after {
   border-color: #ee0909 !important; /* Color del borde */
+}
+.contact-info {
+  color: white;
+  text-align: center;
+  display: block; /* Asegura que el label se comporte como un elemento de bloque para centrado */
+  margin: 0 auto; /* Opcional, para centrar en relación al contenedor */
 }
 </style>
