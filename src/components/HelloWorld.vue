@@ -48,7 +48,7 @@
                 Entrar
               </v-btn>
               <br>
-              <v-btn  size="x-large" text block rounded @click="recoverPassword">
+              <v-btn variant="outlined" size="x-large" text block rounded @click="recoverPassword">
                 Recuperar Contraseña
               </v-btn>
             </v-form>
