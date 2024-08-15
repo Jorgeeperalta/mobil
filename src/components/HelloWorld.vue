@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="login-container">
+  <v-card color="#142c6c">
    
     <v-row justify="center" align="center" >
       <v-col cols="12" sm="8" md="4">
@@ -61,7 +61,7 @@
         </v-card>
       </v-col>
     </v-row>
-  </v-container>
+  </v-card>
 </template>
 
 <script>
