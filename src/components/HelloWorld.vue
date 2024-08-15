@@ -39,7 +39,7 @@
                 required
               ></v-text-field>
               <v-btn
-                color="red"
+                color="primary"
                 block
                 rounded
                  size="x-large"
