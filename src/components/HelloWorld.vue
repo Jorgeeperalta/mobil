@@ -17,7 +17,7 @@
             <v-form ref="form" v-model="valid">
               <v-text-field
                 v-model="username"
-                label="Usuario"
+                label="Dni"
                 prepend-inner-icon="mdi-account"
                 outlined
                 dense
