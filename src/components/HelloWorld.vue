@@ -42,12 +42,13 @@
                 color="primary"
                 block
                 rounded
-                class="my-4"
+                 size="x-large"
                 @click="submit"
               >
                 Entrar
               </v-btn>
-              <v-btn text block rounded @click="recoverPassword">
+              <br>
+              <v-btn  size="x-large" text block rounded @click="recoverPassword">
                 Recuperar Contraseña
               </v-btn>
             </v-form>
