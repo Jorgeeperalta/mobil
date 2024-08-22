@@ -26,9 +26,9 @@
               /></v-carousel-item>
 
               <v-carousel-item
-                src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg"
-                cover
-              ></v-carousel-item>
+               
+              ><vue3VideoPlay v-bind="options2"
+              /></v-carousel-item>
 
               <v-carousel-item
                 src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
@@ -46,6 +46,32 @@
 export default {
   data() {
     return {
+      options2: {
+        width: "1200px",
+        height: "750px",
+        color: "#409eff",
+        title: "",
+        src: "http://jorgeperalta-001-site6.itempurl.com/storage/nublado.mp4",
+        muted: false,
+        webFullScreen: false,
+        speedRate: ["0.75", "1.0", "1.25", "1.5", "2.0"],
+        autoPlay: true,
+        loop: true,
+        mirror: false,
+        ligthOff: false,
+        volume: 0.3,
+        control: true,
+        controlBtns: [
+          "audioTrack",
+          "quality",
+          "speedRate",
+          "volume",
+          "setting",
+          "pip",
+          "pageFullScreen",
+          "fullScreen",
+        ],
+      },
       options: {
         width: "1200px",
         height: "750px",
@@ -56,7 +82,7 @@ export default {
         webFullScreen: false,
         speedRate: ["0.75", "1.0", "1.25", "1.5", "2.0"],
         autoPlay: true,
-        loop: false,
+        loop: true,
         mirror: false,
         ligthOff: false,
         volume: 0.3,
