@@ -51,7 +51,7 @@ export default {
         height: "750px",
         color: "#409eff",
         title: "",
-        src: "http://jorgeperalta-001-site6.itempurl.com/storage/nublado.mp4",
+        src: "https://ibpensistema.com/storage/nublado.mp4",
         muted: false,
         webFullScreen: false,
         speedRate: ["0.75", "1.0", "1.25", "1.5", "2.0"],
